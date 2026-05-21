@@ -1,0 +1,192 @@
+/* Custom Style khusus Dashboard Admin */
+.main-content {
+    margin-left: 260px;
+    padding: 3rem;
+    min-height: 100vh;
+}
+
+/* Kartu Statistik */
+.stat-card {
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.bg-blue { background-color: #55b9f3; }
+.bg-orange { background-color: #ffb800; }
+.bg-dark-blue { background-color: #0f2d3e; }
+
+/* Baris Daftar Pemilik (Satu Baris) */
+.owner-row { 
+    background: white; 
+    border-radius: 15px; 
+    padding: 12px 25px; 
+    margin-bottom: 12px; 
+    display: flex; 
+    align-items: center; 
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
+}
+
+.owner-row:hover { 
+    border-color: #55b9f3; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+}
+
+.owner-info { 
+    display: flex; 
+    align-items: center; 
+    flex-grow: 1; 
+    gap: 25px; 
+}
+
+.owner-name { 
+    font-weight: 600; 
+    width: 220px; 
+    color: #333; 
+}
+
+.owner-email { 
+    color: #888; 
+    flex-grow: 1; 
+    font-size: 0.95rem; 
+}
+
+/* Badge & Tombol Aksi */
+.badge.rounded-pill {
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.actions .btn {
+    transition: 0.2s;
+}
+
+.actions .btn:hover {
+    transform: scale(1.1);
+}
+
+/* Efek Pilihan di Modal */
+.status-option {
+    cursor: pointer;
+    transition: 0.2s;
+    background: #fff;
+}
+
+.status-option:hover {
+    background: #f8f9fa;
+}
+
+/* Ketika Radio di-check, ubah border pilihan di bawahnya */
+#statusAktif:checked + label .status-option {
+    border-color: #198754 !important;
+    background: #f0fff4;
+}
+
+#statusNonAktif:checked + label .status-option {
+    border-color: #dc3545 !important;
+    background: #fff5f5;
+}
+
+/* Penyelarasan Stat Card */
+.stat-card {
+    border-radius: 20px;
+    padding: 4rem;
+    text-align: center;
+    color: white;
+}
+
+.status-container {
+    width: 200px;
+    text-align: center;
+}
+
+.status-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.badge {
+    font-size: 0.85rem;
+    padding: 0.5em 1em;
+}
+
+/* Tambahan untuk Dashboard Admin */
+.stat-card {
+    padding: 25px;
+    border-radius: 15px;
+    color: #fff;
+    transition: 0.3s;
+}
+.stat-card:hover { transform: translateY(-5px); }
+.bg-blue { background: #3498db; }
+.bg-orange { background: #f39c12; }
+.bg-dark-blue { background: #2c3e50; }
+
+.status-option {
+    cursor: pointer;
+    transition: 0.2s;
+}
+input[type="radio"]:checked + label .status-option {
+    border-color: #0d6efd !important;
+    background-color: #f0f7ff;
+}
+
+/* Layout Utama */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 260px;
+    height: 100vh;
+    position: fixed; /* Mengunci sidebar agar tetap di tempat */
+    left: 0;
+    top: 0;
+    background: white;
+    border-right: 1px solid #e9ecef;
+    z-index: 1000;
+}
+
+/* Konten Utama (Wajib ada margin-left agar tidak tertutup sidebar) */
+.main-content {
+    margin-left: 260px; /* Lebar yang sama dengan sidebar */
+    width: calc(100% - 260px);
+    padding: 30px;
+    min-height: 100vh;
+}
+
+/* Navigasi Styling */
+.sidebar .nav-link {
+    color: #6c757d;
+    padding: 12px 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.sidebar .nav-link:hover {
+    background-color: #f0f7ff;
+    color: #0d6efd;
+}
+
+.sidebar .nav-link.active {
+    background-color: #0d6efd; /* Warna biru sesuai referensi Anda */
+    color: white !important;
+    box-shadow: 0 4px 12px rgba(13, 110, 253, 0.2);
+}
+
+.sidebar .nav-link.text-danger:hover {
+    background-color: #fff5f5;
+}
