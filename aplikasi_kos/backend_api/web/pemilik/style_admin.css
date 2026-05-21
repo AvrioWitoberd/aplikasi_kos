@@ -1,0 +1,144 @@
+/* RESET & BASE */
+body { 
+    font-family: 'Poppins', sans-serif; 
+    background-color: #f8f9fa; 
+    display: flex; 
+    min-height: 100vh; 
+    margin: 0;
+}
+
+/* SIDEBAR FIXED */
+.sidebar { 
+    width: 250px; 
+    background: #fff; 
+    border-right: 1px solid #ddd; 
+    position: fixed; 
+    height: 100vh; 
+    padding: 20px; 
+    z-index: 1000; 
+}
+
+/* MAIN CONTENT */
+.main-content { 
+    margin-left: 250px; 
+    width: calc(100% - 250px); 
+    padding: 40px; 
+    min-height: 100vh;
+}
+
+/* NAVIGATION */
+.nav-link { 
+    color: #333; 
+    margin-bottom: 10px; 
+    border-radius: 8px; 
+    transition: 0.3s;
+}
+.nav-link:hover { background: #f0f7ff; color: #0d6efd; }
+.nav-link.active { 
+    background: #0d6efd !important; 
+    color: #fff !important; 
+}
+
+/* CARDS - Kunci Radius Tabel */
+.card {
+    border-radius: 15px !important;
+    border: none !important;
+    overflow: hidden !important; /* INI KUNCINYA: Memotong header tabel agar ikut bulat */
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+    background-color: #fff;
+}
+
+.table-responsive {
+    border-radius: 15px !important;
+    overflow: hidden !important;
+}
+
+/* TABLE STYLING */
+.table {
+    margin-bottom: 0 !important;
+    border-collapse: separate !important;
+    border-spacing: 0 !important;
+}
+
+.table thead th {
+    border-top: none !important;
+    background-color: #f8f9fa !important; /* Warna abu-abu header */
+}
+
+.table tbody td {
+    padding: 15px;
+    vertical-align: middle;
+}
+
+/* Efek Hover di Baris Tabel */
+.table tbody tr:hover {
+    background-color: #fafafa;
+    transition: 0.2s;
+}
+
+/* DAFTAR KOS SPECIFIC */
+.img-thumbnail-custom { 
+    width: 80px; 
+    height: 80px; 
+    object-fit: cover; 
+    border-radius: 12px; /* Radius foto unit */
+}
+
+.btn-action { 
+    width: 35px; 
+    height: 35px; 
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center; 
+    border-radius: 10px; /* Radius tombol aksi */
+    margin: 0 2px; 
+    transition: 0.2s;
+}
+
+/* TAMBAH/EDIT KOS SPECIFIC */
+.upload-box { 
+    border: 2px dashed #ddd; 
+    padding: 30px; 
+    text-align: center; 
+    border-radius: 12px; 
+    cursor: pointer; 
+    transition: 0.3s; 
+}
+.upload-box:hover { border-color: #0d6efd; background: #f0f7ff; }
+
+.preview-card { position: relative; width: 120px; height: 120px; }
+.preview-card img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 12px; 
+    border: 1px solid #ddd; 
+}
+
+textarea.form-control { height: auto; min-height: 100px; border-radius: 10px; }
+
+/* Style tambahan untuk Modal agar konsisten dengan Dashboard */
+.modal-content {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1) !important;
+}
+
+.modal .btn {
+    transition: 0.3s;
+}
+
+.modal .btn-danger {
+    background-color: #dc3545;
+    border: none;
+}
+
+.modal .btn-danger:hover {
+    background-color: #bb2d3b;
+    transform: translateY(-2px);
+}
+
+.modal-backdrop {
+    z-index: 9998 !important;
+}
+.modal {
+    z-index: 9999 !important;
+}

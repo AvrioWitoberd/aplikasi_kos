@@ -1,0 +1,288 @@
+/* MASTER STYLE: style_pemilik_kos.css
+   Sinkronisasi Style Admin & Pemilik Kos
+*/
+
+/* --- BASE & RESET --- */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    margin: 0;
+    min-height: 100vh;
+}
+
+/* --- SIDEBAR FIXED (Sesuai Screenshot Admin) --- */
+.sidebar {
+    width: 260px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: white;
+    border-right: 1px solid #e9ecef;
+    z-index: 1000;
+    padding: 20px;
+}
+
+.sidebar .nav-link {
+    color: #6c757d;
+    padding: 12px 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.sidebar .nav-link:hover {
+    background-color: #f0f7ff;
+    color: #0d6efd;
+}
+
+.sidebar .nav-link.active {
+    background-color: #0d6efd !important;
+    color: white !important;
+    box-shadow: 0 4px 12px rgba(13, 110, 253, 0.2);
+}
+
+.sidebar .nav-link.text-danger:hover {
+    background-color: #fff5f5;
+}
+
+/* --- MAIN CONTENT LAYOUT --- */
+.main-content {
+    margin-left: 260px; /* Sesuai lebar sidebar */
+    width: calc(100% - 260px);
+    padding: 40px;
+    min-height: 100vh;
+}
+
+/* --- KARTU STATISTIK (Style Admin Modern) --- */
+.stat-card {
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 2rem;
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.bg-blue { background: linear-gradient(135deg, #3498db, #2980b9); }
+.bg-orange { background: linear-gradient(135deg, #f39c12, #d35400); }
+.bg-dark-blue { background: linear-gradient(135deg, #2c3e50, #1a252f); }
+
+/* --- TABEL & CARD (Style Pemilik - Kunci Radius) --- */
+.card {
+    border-radius: 20px !important;
+    border: none !important;
+    overflow: hidden !important;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05) !important;
+    background-color: #fff;
+}
+
+.table-responsive {
+    border-radius: 20px !important;
+    overflow: hidden !important;
+}
+
+.table {
+    margin-bottom: 0 !important;
+    border-collapse: separate !important;
+    border-spacing: 0 !important;
+}
+
+.table thead th {
+    background-color: #f8f9fa !important;
+    padding: 18px 15px;
+    border-top: none !important;
+    font-weight: 600;
+    color: #6c757d;
+}
+
+.table tbody td {
+    padding: 15px;
+    vertical-align: middle;
+}
+
+.table tbody tr:hover {
+    background-color: #fafafa;
+}
+
+/* --- TOMBOL AKSI & BADGE --- */
+.btn-action { 
+    width: 38px; 
+    height: 38px; 
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center; 
+    border-radius: 12px;
+    transition: 0.2s;
+    background: #f8f9fa;
+    border: none;
+}
+
+.btn-action:hover { transform: scale(1.1); }
+
+.badge.rounded-pill {
+    font-weight: 500;
+    padding: 0.6em 1.2em;
+}
+
+/* --- FORM & MODAL (Sinkronisasi) --- */
+.status-option {
+    cursor: pointer;
+    transition: 0.2s;
+    border: 2px solid #eee;
+    border-radius: 15px;
+}
+
+input[type="radio"]:checked + label .status-option {
+    border-color: #0d6efd !important;
+    background-color: #f0f7ff;
+}
+
+.modal-content {
+    border-radius: 25px !important;
+    border: none !important;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.1) !important;
+}
+
+/* Foto & Upload Specific */
+.img-thumbnail-custom { 
+    width: 60px; 
+    height: 60px; 
+    object-fit: cover; 
+    border-radius: 12px; 
+}
+
+/* --- SINKRONISASI OWNER ROW (DAFTAR PEMILIK) --- */
+.owner-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.owner-row {
+    background: white;
+    border-radius: 15px;
+    padding: 15px 25px;
+    display: flex;
+    align-items: center; /* Menyelaraskan semua elemen ke tengah secara vertikal */
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    margin-bottom: 10px;
+}
+
+.owner-row:hover {
+    border-color: #0d6efd;
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05) !important;
+}
+
+.owner-info {
+    display: flex;
+    align-items: center; /* Menjaga avatar dan teks tetap sejajar tengah */
+    gap: 30px;
+    flex-grow: 1;
+}
+
+.owner-details-inline {
+    display: flex;
+    flex: 1; /* Mengambil sisa ruang baris */
+}
+
+.avatar-sm img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.owner-name {
+    min-width: 200px; /* Menjaga area nama tetap di kiri */
+    font-weight: 600;
+}
+
+.owner-email {
+    flex-grow: 1; /* Mengisi ruang tengah */
+    text-align: left; /* MEMBUAT TEKS DI TENGAH */
+    font-size: 0.95rem;
+    color: #888;
+}
+
+.status-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+}
+
+.action-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Penyesuaian Stat Card agar sejajar tinggi */
+.stat-card h1 {
+    font-size: 2.5rem;
+    line-height: 1;
+}
+
+.stat-card p {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.btn-action {
+    width: 42px;
+    height: 42px;
+    display: inline-flex; /* Gunakan inline-flex */
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    border: none;
+    background: #f8f9fa; /* Warna background soft */
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+.btn-action:hover {
+    transform: translateY(-3px);
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Update CSS untuk jarak yang lebih lega */
+.blog-item h4 {
+    margin-top: 12px; /* Jarak judul dari badge kategori */
+    margin-bottom: 8px; /* Jarak judul ke tanggal */
+}
+.blog-info-meta {
+    margin-bottom: 15px; /* Jarak tanggal ke isi konten */
+    display: flex;
+    gap: 15px; /* Jarak antar icon meta jika ada */
+}
+.blog-item p {
+    line-height: 1.6; /* Agar baris teks tidak terlalu rapat */
+    color: #6c757d;
+}
+
+.form-card { 
+    border: none; 
+    border-radius: 20px; 
+    padding: 30px !important; /* Tambah padding dalam agar tidak mepet */
+}
+.mb-input-custom {
+    margin-bottom: 25px; /* Jarak antar input field lebih lebar */
+}
+
+.btn-action i {
+    font-size: 1.2rem;
+    line-height: 1;
+}
