@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import '../../providers/blog_provider.dart';
-import 'blog_detail_screen.dart';
+import 'package:mobile_app/providers/blog_provider.dart';
+import 'package:mobile_app/core/routes/app_routes.dart';
 
 class BlogScreen extends StatelessWidget {
-  const BlogScreen({Key? key}) : super(key: key);
+  const BlogScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -133,11 +133,10 @@ class BlogScreen extends StatelessWidget {
                     final blog = blogs[index];
                     return GestureDetector(
                       onTap: () {
-                        Navigator.push(
+                        Navigator.pushNamed(
                           context,
-                          MaterialPageRoute(
-                            builder: (context) => BlogDetailScreen(blog: blog),
-                          ),
+                          AppRoutes.blogDetail,
+                          arguments: blog,
                         );
                       },
                       child: Container(

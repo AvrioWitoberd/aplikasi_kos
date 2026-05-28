@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import '../main_navigation.dart';
+import 'package:mobile_app/core/routes/app_routes.dart';
 
 class SplashScreen extends StatefulWidget {
-  const SplashScreen({Key? key}) : super(key: key);
+  const SplashScreen({super.key});
 
   @override
   State<SplashScreen> createState() => _SplashScreenState();
@@ -20,10 +20,7 @@ class _SplashScreenState extends State<SplashScreen> {
     if (!mounted) return;
     // Browse-first: always go to Home. Login is only required for
     // specific guarded actions (favorite, rating, booking).
-    Navigator.pushReplacement(
-      context,
-      MaterialPageRoute(builder: (_) => const MainNavigationScreen()),
-    );
+    Navigator.pushReplacementNamed(context, AppRoutes.main);
   }
 
   @override

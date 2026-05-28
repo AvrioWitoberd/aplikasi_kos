@@ -2,13 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'package:url_launcher/url_launcher.dart';
-import '../../providers/auth_provider.dart';
-import '../auth/role_selection_screen.dart';
-import '../main_navigation.dart';
-import '../home/privacy_screen.dart';
+import 'package:mobile_app/providers/auth_provider.dart';
+import 'package:mobile_app/core/routes/app_routes.dart';
+import 'package:mobile_app/views/auth/role_selection_screen.dart';
 
 class ProfileScreen extends StatelessWidget {
-  const ProfileScreen({Key? key}) : super(key: key);
+  const ProfileScreen({super.key});
 
   void _showLogoutConfirmation(BuildContext context) {
     showDialog(
@@ -57,11 +56,9 @@ class ProfileScreen extends StatelessWidget {
   void _handleLogout(BuildContext context) {
     final authProvider = Provider.of<AuthProvider>(context, listen: false);
     authProvider.logout();
-    Navigator.pushAndRemoveUntil(
+    Navigator.pushNamedAndRemoveUntil(
       context,
-      MaterialPageRoute(
-        builder: (_) => const MainNavigationScreen(initialIndex: 0),
-      ),
+      AppRoutes.main,
       (route) => false,
     );
   }
@@ -158,10 +155,7 @@ class ProfileScreen extends StatelessWidget {
                     icon: Icons.privacy_tip_outlined,
                     title: "Kebijakan Privasi",
                     onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (_) => const PrivacyScreen()),
-                      );
+                      Navigator.pushNamed(context, AppRoutes.privacy);
                     },
                   ),
                   const Divider(height: 1, indent: 56, endIndent: 16),
@@ -182,10 +176,7 @@ class ProfileScreen extends StatelessWidget {
                       iconColor: const Color(0xFF0D3B66),
                       showChevron: true,
                       onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (_) => const RoleSelectionScreen()),
-                        );
+                        Navigator.pushNamed(context, AppRoutes.roleSelection);
                       },
                     ),
                 ],

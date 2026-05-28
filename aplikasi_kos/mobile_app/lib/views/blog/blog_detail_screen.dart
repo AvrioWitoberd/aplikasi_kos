@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import '../../models/blog.dart';
+import 'package:mobile_app/models/blog.dart';
 
 class BlogDetailScreen extends StatelessWidget {
   final Blog blog;
 
-  const BlogDetailScreen({Key? key, required this.blog}) : super(key: key);
+  const BlogDetailScreen({super.key, required this.blog});
 
   @override
   Widget build(BuildContext context) {

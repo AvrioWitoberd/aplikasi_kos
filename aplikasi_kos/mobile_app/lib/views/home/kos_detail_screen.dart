@@ -3,15 +3,15 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
 import 'package:url_launcher/url_launcher.dart';
-import '../../models/kos.dart';
-import '../../providers/auth_provider.dart';
-import '../../providers/kos_provider.dart';
-import '../auth/login_screen.dart';
+import 'package:mobile_app/models/kos.dart';
+import 'package:mobile_app/providers/auth_provider.dart';
+import 'package:mobile_app/providers/kos_provider.dart';
+import 'package:mobile_app/core/routes/app_routes.dart';
 
 class KosDetailScreen extends StatefulWidget {
   final Kos kos;
 
-  const KosDetailScreen({Key? key, required this.kos}) : super(key: key);
+  const KosDetailScreen({super.key, required this.kos});
 
   @override
   State<KosDetailScreen> createState() => _KosDetailScreenState();
@@ -46,10 +46,7 @@ class _KosDetailScreenState extends State<KosDetailScreen> {
         );
       },
       onUnauthenticated: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => const LoginScreen()),
-        );
+        Navigator.pushNamed(context, AppRoutes.login);
       },
     );
   }

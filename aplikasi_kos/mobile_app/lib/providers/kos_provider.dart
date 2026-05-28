@@ -1,9 +1,9 @@
 import 'package:flutter/foundation.dart';
-import '../models/kos.dart';
-import '../data/dummy_data.dart';
+import 'package:mobile_app/models/kos.dart';
+import 'package:mobile_app/data/dummy_data.dart';
 
 class KosProvider with ChangeNotifier {
-  List<String> _favoriteKosIds = [];
+  final List<String> _favoriteKosIds = [];
   Map<String, List<int>> ratingsData = {};
 
   // Filter state (used by home_screen & filter_bottom_sheet)

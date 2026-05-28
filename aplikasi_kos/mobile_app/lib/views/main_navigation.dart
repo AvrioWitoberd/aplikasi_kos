@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'home/home_screen.dart';
-import 'blog/blog_screen.dart';
-import 'favorite/favorite_screen.dart';
-import 'profile/profile_screen.dart';
+import 'package:mobile_app/views/home/home_screen.dart';
+import 'package:mobile_app/views/blog/blog_screen.dart';
+import 'package:mobile_app/views/favorite/favorite_screen.dart';
+import 'package:mobile_app/views/profile/profile_screen.dart';
 
 class MainNavigationScreen extends StatefulWidget {
   final int initialIndex;
-  const MainNavigationScreen({Key? key, this.initialIndex = 0}) : super(key: key);
+  const MainNavigationScreen({super.key, this.initialIndex = 0});
 
   @override
   State<MainNavigationScreen> createState() => _MainNavigationScreenState();

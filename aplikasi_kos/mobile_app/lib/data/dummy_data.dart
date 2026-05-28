@@ -1,5 +1,5 @@
-import '../models/kos.dart';
-import '../models/blog.dart';
+import 'package:mobile_app/models/kos.dart';
+import 'package:mobile_app/models/blog.dart';
 
 // ─── KOS DATA ────────────────────────────────────────────────────────────────
 

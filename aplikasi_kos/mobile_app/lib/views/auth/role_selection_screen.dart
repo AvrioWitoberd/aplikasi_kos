@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'login_screen.dart';
+import 'package:mobile_app/core/routes/app_routes.dart';
 
 class RoleSelectionScreen extends StatelessWidget {
-  const RoleSelectionScreen({Key? key}) : super(key: key);
+  const RoleSelectionScreen({super.key});
 
   Future<void> _launchOwnerUrl() async {
     final Uri url = Uri.parse('https://example.com/pemilik-kos');
@@ -55,10 +55,7 @@ class RoleSelectionScreen extends StatelessWidget {
                     ),
                   ),
                   onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (_) => const LoginScreen()),
-                    );
+                    Navigator.pushNamed(context, AppRoutes.login);
                   },
                   child: Text(
                     "Pencari Kos",

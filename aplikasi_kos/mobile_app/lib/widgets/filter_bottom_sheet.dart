@@ -12,13 +12,13 @@ class FilterBottomSheet extends StatefulWidget {
   final VoidCallback onClear;
 
   const FilterBottomSheet({
-    Key? key,
+    super.key,
     required this.initialLocation,
     required this.initialType,
     required this.initialPriceRanges,
     required this.onApply,
     required this.onClear,
-  }) : super(key: key);
+  });
 
   @override
   State<FilterBottomSheet> createState() => _FilterBottomSheetState();

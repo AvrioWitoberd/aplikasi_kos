@@ -2,16 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
-import '../models/kos.dart';
-import '../providers/auth_provider.dart';
-import '../providers/kos_provider.dart';
-import '../views/auth/login_screen.dart';
-import '../views/home/kos_detail_screen.dart';
+import 'package:mobile_app/models/kos.dart';
+import 'package:mobile_app/providers/auth_provider.dart';
+import 'package:mobile_app/providers/kos_provider.dart';
+import 'package:mobile_app/core/routes/app_routes.dart';
 
 class KosCard extends StatelessWidget {
   final Kos kos;
 
-  const KosCard({Key? key, required this.kos}) : super(key: key);
+  const KosCard({super.key, required this.kos});
 
   @override
   Widget build(BuildContext context) {
@@ -23,9 +22,10 @@ class KosCard extends StatelessWidget {
 
     return GestureDetector(
       onTap: () {
-        Navigator.push(
+        Navigator.pushNamed(
           context,
-          MaterialPageRoute(builder: (context) => KosDetailScreen(kos: kos)),
+          AppRoutes.kosDetail,
+          arguments: kos,
         );
       },
       child: Container(
@@ -100,12 +100,7 @@ class KosCard extends StatelessWidget {
                                 auth.performGuardedAction(
                                   action: () => kosProvider.toggleFavorite(kos.id),
                                   onUnauthenticated: () {
-                                    Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                        builder: (_) => const LoginScreen(),
-                                      ),
-                                    );
+                                    Navigator.pushNamed(context, AppRoutes.login);
                                   },
                                 );
                               },

@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'providers/kos_provider.dart';
-import 'providers/blog_provider.dart';
-import 'providers/auth_provider.dart';
-import 'views/splash/splash_screen.dart';
-
+import 'package:mobile_app/providers/kos_provider.dart';
+import 'package:mobile_app/providers/blog_provider.dart';
+import 'package:mobile_app/providers/auth_provider.dart';
+import 'package:mobile_app/core/routes/app_routes.dart';
 void main() {
   runApp(
     MultiProvider(
@@ -20,7 +19,7 @@ void main() {
 }
 
 class MyKosApp extends StatelessWidget {
-  const MyKosApp({Key? key}) : super(key: key);
+  const MyKosApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +33,8 @@ class MyKosApp extends StatelessWidget {
         useMaterial3: true,
         textTheme: GoogleFonts.interTextTheme(Theme.of(context).textTheme),
       ),
-      home: const SplashScreen(),
+      initialRoute: AppRoutes.splash,
+      onGenerateRoute: AppRoutes.generateRoute,
     );
   }
 }

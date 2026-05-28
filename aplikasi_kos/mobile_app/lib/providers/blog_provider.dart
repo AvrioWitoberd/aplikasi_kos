@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
-import '../models/blog.dart';
-import '../data/dummy_data.dart';
+import 'package:mobile_app/models/blog.dart';
+import 'package:mobile_app/data/dummy_data.dart';
 
 class BlogProvider with ChangeNotifier {
   String? _selectedCategory;

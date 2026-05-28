@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import '../../data/dummy_data.dart';
-import '../../providers/kos_provider.dart';
-import '../../widgets/kos_card.dart';
+import 'package:mobile_app/data/dummy_data.dart';
+import 'package:mobile_app/providers/kos_provider.dart';
+import 'package:mobile_app/widgets/kos_card.dart';
 
 class FavoriteScreen extends StatelessWidget {
-  const FavoriteScreen({Key? key}) : super(key: key);
+  const FavoriteScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

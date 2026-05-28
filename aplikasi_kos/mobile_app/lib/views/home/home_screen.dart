@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import '../../providers/kos_provider.dart';
-import '../../widgets/filter_bottom_sheet.dart';
-import '../../widgets/kos_card.dart';
+import 'package:mobile_app/providers/kos_provider.dart';
+import 'package:mobile_app/widgets/filter_bottom_sheet.dart';
+import 'package:mobile_app/widgets/kos_card.dart';
 import 'package:url_launcher/url_launcher.dart';
-import '../auth/role_selection_screen.dart';
-import '../../providers/auth_provider.dart';
-import '../main_navigation.dart';
-import 'privacy_screen.dart';
+import 'package:mobile_app/views/auth/role_selection_screen.dart';
+import 'package:mobile_app/providers/auth_provider.dart';
+import 'package:mobile_app/views/main_navigation.dart';
+import 'package:mobile_app/views/home/privacy_screen.dart';
 
 class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+  const HomeScreen({super.key});
 
   void _showLogoutDialog(BuildContext context) {
     showDialog(
