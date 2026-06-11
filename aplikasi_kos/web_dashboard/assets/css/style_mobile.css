@@ -1,0 +1,1442 @@
+/* ========================================
+   MOBILE GLOBAL
+   AMAN UNTUK SEMUA HALAMAN
+   ======================================== */
+
+@media (max-width: 991.98px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    /* =========================
+       MOBILE TOPBAR
+    ========================= */
+
+    .mobile-topbar {
+        height: 65px;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding: 0 16px;
+        border-bottom: 1px solid #f1f1f1;
+        position: sticky;
+        top: 0;
+        z-index: 1100;
+    }
+
+    .mobile-menu-btn {
+        width: 42px;
+        height: 42px;
+        border: none;
+        border-radius: 12px;
+        background: #f5f5f5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+    }
+
+    /* =========================
+       SIDEBAR MOBILE
+    ========================= */
+
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: -280px;
+        width: 260px;
+        height: 100vh;
+        background: #fff;
+        z-index: 2000;
+        overflow-y: auto;
+        transition: 0.3s ease;
+        box-shadow: 10px 0 30px rgba(0,0,0,0.08);
+    }
+
+    .sidebar.show-sidebar {
+        left: 0;
+    }
+
+    /* OVERLAY */
+
+    .sidebar-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,0.4);
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s ease;
+        z-index: 1500;
+    }
+
+    .sidebar-overlay.show-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* =========================
+       MAIN CONTENT
+    ========================= */
+
+    .main-content {
+        width: 100%;
+        padding: 20px 15px !important;
+    }
+
+    /* =========================
+       DASHBOARD CARD
+    ========================= */
+
+    .stat-card-pemilik {
+        border-radius: 18px;
+    }
+
+    .stat-number-pemilik {
+        font-size: 26px !important;
+    }
+
+    .stat-icon-pemilik {
+        font-size: 30px !important;
+    }
+
+    .menu-card-pemilik {
+        margin-top: 20px;
+    }
+
+    /* =========================
+       DASHBOARD TABLE
+    ========================= */
+
+    .table-responsive {
+        overflow-x: auto;
+    }
+
+    .kos-table-pemilik {
+        min-width: 100%;
+    }
+
+    .kos-table-pemilik th,
+    .kos-table-pemilik td {
+        font-size: 14px;
+    }
+
+    .desktop-only {
+        display: none !important;
+    }
+
+    /* =========================
+       DAFTAR KOS
+    ========================= */
+
+    .kos-grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .card-kos {
+        width: 100%;
+        overflow: hidden;
+        border-radius: 20px !important;
+    }
+
+    .card-kos img {
+        width: 100%;
+        height: 180px !important;
+        object-fit: cover;
+        display: block;
+    }
+
+    .card-kos .card-body {
+        padding: 16px;
+    }
+
+    .card-kos h6 {
+        font-size: 15px;
+    }
+
+    .card-kos .info-row {
+        font-size: 13px;
+        gap: 6px;
+    }
+
+    .card-kos .info-row span {
+        font-size: 13px;
+    }
+
+    .card-kos .badge {
+        font-size: 11px;
+    }
+
+    .card-kos .text-primary.fw-bold {
+        font-size: 15px !important;
+    }
+
+    /* FILTER */
+
+    .search-wrapper input,
+    .filter-select {
+        height: 48px;
+        border-radius: 14px;
+        font-size: 14px;
+    }
+
+    /* MODAL */
+
+    .modal-dialog {
+        margin: 16px;
+    }
+}
+
+
+/* ========================================
+   EXTRA SMALL MOBILE
+   ======================================== */
+
+@media (max-width: 575.98px) {
+
+    .main-content {
+        padding: 16px 12px !important;
+    }
+
+    /* DASHBOARD */
+
+    .main-content h3 {
+        font-size: 22px;
+    }
+
+    .stat-card-pemilik {
+        padding: 18px !important;
+    }
+
+    .stat-number-pemilik {
+        font-size: 24px !important;
+    }
+
+    .stat-icon-pemilik {
+        font-size: 26px !important;
+    }
+
+    .menu-card-pemilik {
+        padding: 20px !important;
+    }
+
+    .help-link-pemilik {
+        font-size: 14px;
+    }
+
+    /* DAFTAR KOS */
+
+    .kos-grid {
+        grid-template-columns: 1fr !important;
+        gap: 18px;
+    }
+
+    .card-kos img {
+        height: 210px !important;
+    }
+
+    .card-kos .card-body {
+        padding: 15px;
+    }
+
+    .card-kos h6 {
+        font-size: 15px;
+        max-width: 60% !important;
+    }
+
+    .card-kos .badge {
+        font-size: 10px;
+        padding: 6px 8px;
+    }
+
+    .card-kos .text-primary.fw-bold {
+        font-size: 16px !important;
+    }
+
+    /* FILTER */
+
+    .search-wrapper input,
+    .filter-select {
+        height: 46px;
+        font-size: 13px;
+    }
+
+    /* TOTAL */
+
+    #totalKos {
+        font-size: 20px;
+    }
+}
+
+
+
+/* ========================================
+   DETAIL KOS MOBILE
+   ======================================== */
+
+@media (max-width: 991.98px) {
+
+    /* CONTENT */
+    #detailContent {
+        padding: 10px 0 !important;
+    }
+
+    /* CAROUSEL */
+    #kosCarousel img {
+        height: 240px;
+        object-fit: cover;
+        border-radius: 18px;
+    }
+
+    /* TITLE */
+    #detailContent h2 {
+        font-size: 24px;
+        line-height: 1.4;
+    }
+
+    /* BADGE */
+    #detailContent .badge {
+        font-size: 11px;
+        padding: 8px 10px;
+    }
+
+    /* FLEX HEADER */
+    #detailContent .d-flex.justify-content-between.align-items-center.mb-4 {
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 15px;
+    }
+
+    #detailContent .d-flex.gap-3 {
+        flex-wrap: wrap;
+        gap: 10px !important;
+    }
+
+    #detailContent .d-flex.gap-2 {
+        width: 100%;
+    }
+
+    #detailContent .d-flex.gap-2 button {
+        flex: 1;
+    }
+
+    /* SECTION */
+    #detailContent h5 {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+
+    #detailContent p {
+        font-size: 14px;
+    }
+
+    /* FASILITAS */
+    #detailContent .rounded-pill {
+        font-size: 13px !important;
+        padding: 10px 14px !important;
+    }
+
+    /* MAP */
+    .map-container iframe {
+        height: 240px !important;
+    }
+
+    /* CARD PRICE */
+    .sticky-price-card {
+        position: relative !important;
+        top: 0 !important;
+        margin-top: 30px;
+        border-radius: 20px !important;
+    }
+
+    .sticky-price-card h3 {
+        font-size: 28px;
+    }
+
+    .sticky-price-card .btn {
+        height: 52px;
+        font-size: 14px;
+    }
+
+    /* RATING */
+    .rating-box {
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    #starRating i {
+        font-size: 30px;
+    }
+
+    #btnKirimRating {
+        width: 100%;
+        height: 50px;
+        border-radius: 14px;
+    }
+}
+
+
+/* ========================================
+   EXTRA SMALL MOBILE
+   ======================================== */
+
+@media (max-width: 575.98px) {
+
+    /* CONTAINER */
+    #detailContent {
+        padding: 0 !important;
+    }
+
+    /* IMAGE */
+    #kosCarousel img {
+        height: 210px;
+        border-radius: 16px;
+    }
+
+    /* TITLE */
+    #detailContent h2 {
+        font-size: 20px;
+    }
+
+    /* LOCATION */
+    #detailContent .text-muted {
+        font-size: 13px;
+    }
+
+    /* BADGE */
+    #detailContent .badge {
+        font-size: 10px;
+    }
+
+    /* BUTTON */
+    .btn-action-outline {
+        font-size: 13px;
+        padding: 10px 14px;
+    }
+
+    /* PRICE CARD */
+    .sticky-price-card {
+        padding: 20px !important;
+    }
+
+    .sticky-price-card h3 {
+        font-size: 24px;
+    }
+
+    /* MAP */
+    .map-container iframe {
+        height: 220px !important;
+    }
+
+    /* STAR */
+    #starRating i {
+        font-size: 26px;
+    }
+}
+
+/* ========================================
+   DETAIL KOS MOBILE IMPROVED
+   ======================================== */
+
+
+
+/* ========================================
+   FIX MAPS MOBILE
+   ======================================== */
+
+
+
+/* ========================================
+   MOBILE: HIDE DESKTOP ELEMENTS
+   SHOW MOBILE ELEMENTS
+   ======================================== */
+/* 
+@media (max-width: 991.98px) {
+    .desktop-only {
+        display: none !important;
+    }
+    
+    .mobile-only {
+        display: block !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .desktop-only {
+        display: block !important;
+    }
+    
+    .mobile-only {
+        display: none !important;
+    }
+} */
+
+/* ========================================
+   STICKY PRICE CARD - MOBILE VERSION
+   ======================================== */
+
+@media (max-width: 991.98px) {
+    .sticky-price-card {
+        position: relative !important;
+        top: 0 !important;
+        margin-top: 20px;
+        padding: 16px !important;
+        border-radius: 16px !important;
+    }
+    
+    .sticky-price-card h4 {
+        font-size: 20px;
+    }
+    
+    .sticky-price-card .btn-pesan {
+        height: 48px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .sticky-price-card {
+        padding: 12px !important;
+    }
+    
+    .sticky-price-card h4 {
+        font-size: 18px;
+    }
+    
+    .sticky-price-card .text-muted {
+        font-size: 11px;
+    }
+    
+    .sticky-price-card .btn-pesan {
+        height: 44px;
+        font-size: 12px;
+        padding: 0 8px;
+    }
+    
+    .sticky-price-card .btn-pesan i {
+        font-size: 14px;
+    }
+}
+
+/* Cukup ini saja, hapus yang dobel */
+@media (max-width: 991.98px) {
+    .desktop-only {
+        display: none !important;
+    }
+    
+    .mobile-only {
+        display: block !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .desktop-only {
+        display: block !important;
+    }
+    
+    .mobile-only {
+        display: none !important;
+    }
+}
+
+
+/* ========================================
+   MOBILE FIXED BOTTOM BAR SAJA
+   TIDAK MENYENTUH DESKTOP
+   ======================================== */
+
+
+
+/* Tambahan untuk mobile kecil */
+@media (max-width: 575.98px) {
+    .fixed-bottom-mobile h5 {
+        font-size: 16px;
+    }
+    
+    .fixed-bottom-mobile .btn-pesan {
+        font-size: 12px;
+        padding: 10px 8px;
+    }
+    
+    .fixed-bottom-mobile .text-muted {
+        font-size: 10px;
+    }
+
+}
+
+
+
+/* ========================================
+   DETAIL KOS MOBILE CLEAN
+======================================== */
+
+@media (max-width: 991.98px) {
+
+    body{
+        overflow-x: hidden;
+    }
+
+    /* CONTENT */
+    #detailContent{
+        padding: 10px 0 !important;
+    }
+
+    /* ROW */
+    #detailContent .row{
+        margin: 0;
+    }
+
+    /* CAROUSEL */
+    #kosCarousel img{
+        width: 100%;
+        height: 240px;
+        object-fit: cover;
+        border-radius: 18px;
+    }
+
+    /* TITLE */
+    #detailContent h2{
+        font-size: 22px;
+        line-height: 1.4;
+    }
+
+    /* INFO BADGE */
+    #detailContent .d-flex.gap-3{
+        flex-wrap: wrap;
+        gap: 8px !important;
+    }
+
+    #detailContent .badge{
+        font-size: 11px;
+        padding: 8px 10px;
+    }
+
+    /* BUTTON ACTION */
+    #detailContent .d-flex.gap-2{
+        width: 100%;
+        display: flex;
+    }
+
+    #detailContent .d-flex.gap-2 button{
+        flex: 1;
+    }
+
+    .btn-action-outline{
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    /* TEXT */
+    #detailContent p{
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    /* FASILITAS */
+    #detailContent .rounded-pill{
+        font-size: 12px !important;
+        padding: 8px 12px !important;
+    }
+
+    /* MAP */
+    .map-container{
+        height: 220px;
+        overflow: hidden;
+        border-radius: 16px;
+    }
+
+    .map-container iframe{
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+
+    /* MAP BUTTON */
+    .maps-button-wrapper .btn{
+        width: 100%;
+        margin-top: 12px;
+    }
+
+    /* PRICE CARD */
+    .sticky-price-card{
+        position: relative !important;
+        top: 0 !important;
+
+        margin-top: 30px;
+
+        border-radius: 20px !important;
+
+        padding: 20px !important;
+    }
+
+    .sticky-price-card h3{
+        font-size: 26px;
+    }
+
+    .sticky-price-card .btn{
+        height: 48px;
+        font-size: 14px;
+    }
+
+    /* RATING */
+    .rating-box{
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    #starRating i{
+        font-size: 28px;
+    }
+
+    #btnKirimRating{
+        width: 100%;
+        height: 48px;
+    }
+}
+
+
+
+/* ========================================
+   FINAL FIX MOBILE
+======================================== */
+
+@media (max-width: 991.98px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .main-content{
+        margin-left: 0 !important;
+        width: 100% !important;
+        padding: 12px !important;
+    }
+
+    /* KHUSUS DETAIL KOS SAJA */
+    #detailContent .row{
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    #detailContent .container{
+        padding: 0 !important;
+    }
+
+    #detailContent .col-lg-8,
+    #detailContent .col-lg-4{
+        width: 100%;
+        padding: 0;
+    }
+
+
+    #kosCarousel{
+        border-radius: 18px;
+        overflow: hidden;
+    }
+
+    #kosCarousel img{
+        width: 100%;
+        height: 230px !important;
+        object-fit: cover;
+    }
+
+    .sticky-price-card{
+        position: relative !important;
+        top: 0 !important;
+        margin-top: 20px;
+    }
+
+    .map-container{
+        height: 220px !important;
+    }
+
+    .map-container iframe{
+        width: 100%;
+        height: 100%;
+    }
+
+    .rating-box{
+        margin-bottom: 30px;
+    }
+}
+
+html, body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+/* ========================================
+   KELOLA KOS MOBILE FIX - TANPA SCROLL
+   ======================================== */
+
+@media (max-width: 991.98px) {
+
+    /* Table container - hapus overflow-x */
+    .kelola-card {
+        border-radius: 16px !important;
+        overflow-x: visible !important;
+    }
+
+    /* Table styling - HAPUS min-width */
+    .kelola-table {
+        width: 100% !important;
+        min-width: auto !important;
+        table-layout: fixed !important; /* PENTING: bikin kolom fixed */
+    }
+
+    /* KOLOM YANG DITAMPILKAN DI MOBILE */
+    /* Kolom No (kolom 1) - lebar kecil */
+    .kelola-table th:nth-child(1),
+    .kelola-table td:nth-child(1) {
+        display: table-cell !important;
+        width: 15% !important;
+        text-align: center !important;
+    }
+
+    /* Kolom Unit Kos (kolom 2) - lebar terbesar */
+    .kelola-table th:nth-child(2),
+    .kelola-table td:nth-child(2) {
+        display: table-cell !important;
+        width: 55% !important;
+    }
+
+    /* Kolom Aksi (kolom 6) - lebar cukup untuk tombol vertikal */
+    .kelola-table th:nth-child(6),
+    .kelola-table td:nth-child(6) {
+        display: table-cell !important;
+        width: 30% !important;
+        text-align: center !important;
+    }
+
+    /* KOLOM YANG DISEMBUNYIKAN DI MOBILE */
+    .kelola-table th:nth-child(3),
+    .kelola-table td:nth-child(3),
+    .kelola-table th:nth-child(4),
+    .kelola-table td:nth-child(4),
+    .kelola-table th:nth-child(5),
+    .kelola-table td:nth-child(5) {
+        display: none !important;
+    }
+
+    /* ===== TAMPILAN UNIT KOS ===== */
+    .kelola-unit-container {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        gap: 10px !important;
+    }
+
+    /* FOTO - lebih kecil biar muat */
+    .kelola-foto {
+        display: block !important;
+        width: 45px !important;
+        height: 45px !important;
+        object-fit: cover !important;
+        border-radius: 10px !important;
+        flex-shrink: 0 !important;
+    }
+
+    /* Info Unit Kos */
+    .kelola-unit-info {
+        flex: 1 !important;
+        min-width: 0 !important; /* biar teks bisa di-potong */
+    }
+
+    .kelola-unit-info .nama-kos {
+        font-size: 13px !important;
+        font-weight: 700 !important;
+        color: #1e293b !important;
+        margin-bottom: 3px !important;
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+    }
+
+    .kelola-unit-info .alamat-kos {
+        font-size: 10px !important;
+        color: #6c757d !important;
+        line-height: 1.3 !important;
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+    }
+
+    /* ===== TOMBOL AKSI - VERTIKAL ===== */
+    .kelola-actions {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 5px !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .btn-action-kelola {
+        width: 32px !important;
+        height: 32px !important;
+        padding: 0 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        border-radius: 8px !important;
+        font-size: 13px !important;
+    }
+
+    /* ===== PADDING TABEL ===== */
+    .kelola-table th,
+    .kelola-table td {
+        padding: 10px 6px !important;
+        vertical-align: middle !important;
+    }
+}
+
+
+/* =========================
+   FINAL FIX PRICE CARD
+========================= */
+
+@media (max-width: 991.98px){
+
+    .col-lg-4{
+        width:100%;
+        padding:0 !important;
+    }
+
+    .sticky-price-card{
+        display:block !important;
+        position:relative !important;
+        top:0 !important;
+
+        margin-top:20px !important;
+
+        width:100%;
+    }
+}
+
+
+/* ========================================
+   MOBILE FIXED PESAN SEKARANG
+======================================== */
+
+@media (max-width: 991.98px){
+
+    /* kasih ruang bawah */
+    body{
+        padding-bottom: 95px;
+    }
+
+    /* hide sidebar harga asli */
+    .sticky-price-card{
+        display: none !important;
+    }
+
+    /* bottom bar */
+    .fixed-bottom-mobile{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        background: #fff;
+
+        z-index: 9999;
+
+        border-top: 1px solid #eee;
+
+        backdrop-filter: blur(10px);
+    }
+
+    .btn-pesan-mobile{
+        height: 48px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-size: 14px;
+
+        white-space: nowrap;
+    }
+}
+
+/* MOBILE KECIL */
+@media (max-width: 575.98px){
+
+    .fixed-bottom-mobile{
+        padding-bottom: env(safe-area-inset-bottom);
+    }
+
+    .fixed-bottom-mobile h5{
+        font-size: 16px;
+    }
+
+    .btn-pesan-mobile{
+        height: 44px;
+        font-size: 12px;
+        padding: 0 16px;
+    }
+}
+
+/* ========================================
+   MOBILE BUTTON TAMBAH UNIT
+======================================== */
+
+@media (max-width: 991.98px){
+
+    /* header jadi vertikal */
+    #kelolaContent .d-flex.justify-content-between.align-items-center.mb-4{
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 12px;
+    }
+
+    /* tombol tambah unit */
+    #kelolaContent .btn.btn-primary{
+        width: auto !important;
+
+        padding: 8px 16px !important;
+
+        font-size: 13px !important;
+
+        border-radius: 12px !important;
+    }
+
+    #kelolaContent .btn.btn-primary i{
+        font-size: 12px;
+    }
+}
+
+
+
+/* ========================================
+   FORM PROFIL MOBILE FIX
+======================================== */
+
+@media (max-width: 991.98px){
+
+    /* container lebih lebar */
+    .container.py-5{
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    /* card form */
+    .form-card{
+        padding: 22px !important;
+        border-radius: 18px !important;
+    }
+
+    /* title */
+    .form-card h3{
+        font-size: 22px !important;
+        margin-bottom: 24px !important;
+    }
+
+    /* subjudul */
+    .form-card h6{
+        font-size: 13px !important;
+    }
+
+    /* label */
+    .form-label{
+        font-size: 13px !important;
+        margin-bottom: 6px;
+    }
+
+    /* input */
+    .form-control{
+        font-size: 13px !important;
+        padding: 10px 12px !important;
+    }
+
+    textarea.form-control{
+        min-height: 90px;
+    }
+
+    /* alert info */
+    .alert{
+        font-size: 12px !important;
+    }
+
+    .alert h6{
+        font-size: 14px !important;
+    }
+
+    /* button submit */
+    #btnKirim{
+        height: 48px;
+        font-size: 14px !important;
+        padding: 0 16px !important;
+    }
+
+    /* preview image */
+    .preview-item{
+        width: 85px !important;
+        height: 85px !important;
+    }
+}
+
+
+/* MOBILE KECIL */
+@media (max-width: 575.98px){
+
+    /* gap kanan kiri lebih kecil */
+    .container.py-5{
+        padding-left: 6px !important;
+        padding-right: 6px !important;
+        padding-top: 16px !important;
+        padding-bottom: 16px !important;
+    }
+
+    /* card */
+    .form-card{
+        padding: 16px !important;
+        border-radius: 16px !important;
+    }
+
+    /* title */
+    .form-card h3{
+        font-size: 18px !important;
+        line-height: 1.5;
+    }
+
+    /* subjudul */
+    .form-card h6{
+        font-size: 12px !important;
+    }
+
+    /* label */
+    .form-label{
+        font-size: 12px !important;
+    }
+
+    /* input */
+    .form-control{
+        font-size: 12px !important;
+        padding: 9px 11px !important;
+    }
+
+    /* textarea */
+    textarea.form-control{
+        min-height: 80px;
+    }
+
+    /* button */
+    #btnKirim{
+        height: 44px;
+        font-size: 13px !important;
+        border-radius: 12px !important;
+    }
+
+    /* preview */
+    .preview-item{
+        width: 75px !important;
+        height: 75px !important;
+    }
+
+    /* info payment */
+    .alert p{
+        font-size: 11px !important;
+        line-height: 1.6;
+    }
+}
+
+/* =========================
+   SEARCH INPUT FIX
+========================= */
+
+.search-wrapper{
+    position: relative;
+}
+
+.search-wrapper i{
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    
+    font-size: 14px;
+    
+    color: #9ca3af;
+
+    z-index: 2;
+}
+
+.search-wrapper input{
+    padding-left: 42px !important;
+}
+
+/* @media (max-width: 991.98px){
+
+    .kos-table-pemilik{
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .kos-table-pemilik td,
+    .kos-table-pemilik th{
+        white-space: nowrap;
+        vertical-align: middle;
+    }
+
+    .kos-table-pemilik td:first-child{
+        max-width: 180px;
+        white-space: normal;
+    }
+
+} */
+
+/* ========================================
+   UNIT KOS TERBARU FIX
+======================================== */
+
+/* DESKTOP */
+@media (min-width: 992px){
+
+    /* .kos-table-pemilik{
+        width: 100%;
+        table-layout: fixed;
+    } */
+
+    .kos-table-pemilik th,
+    .kos-table-pemilik td{
+        vertical-align: middle;
+        padding: 18px;
+    }
+
+    .kos-table-pemilik td{
+        white-space: nowrap;
+    }
+
+    .kos-table-pemilik td:first-child{
+        white-space: nowrap;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 991.98px){
+
+    .kos-table-pemilik{
+        width: 100%;
+    }
+
+    .kos-table-pemilik td,
+    .kos-table-pemilik th{
+        vertical-align: middle;
+    }
+
+    .kos-table-pemilik td:first-child{
+        white-space: normal;
+    }
+}
+
+/* ========================================
+   DASHBOARD MOBILE SPACING FIX
+======================================== */
+
+@media (max-width: 991.98px){
+
+    /* jarak welcome ke statistik */
+    #dashboardContent .mb-4{
+        margin-bottom: 18px !important;
+    }
+
+    /* jarak statistik ke unit kos */
+    #dashboardContent .row.g-4.mb-5{
+        margin-bottom: 18px !important;
+    }
+
+    /* card unit kos */
+    #dashboardContent .card{
+        border-radius: 18px !important;
+    }
+
+    /* khusus Unit Kos Terbaru */
+    #dashboardContent .col-lg-8{
+        margin-top: 0 !important;
+    }
+
+    /* menu cepat */
+    #dashboardContent .col-lg-4{
+        margin-top: 18px;
+    }
+
+    /* padding card mobile */
+    #dashboardContent .card{
+        padding: 18px !important;
+    }
+}
+
+/* MOBILE KECIL */
+@media (max-width: 575.98px){
+
+    /* statistik lebih rapat */
+    #dashboardContent .row.g-4{
+        gap: 12px !important;
+    }
+
+    /* unit kos jangan mepet */
+    #dashboardContent .col-lg-8{
+        margin-top: 6px !important;
+    }
+
+    /* card */
+    #dashboardContent .card{
+        padding: 16px !important;
+        border-radius: 16px !important;
+    }
+
+    /* title */
+    #dashboardContent h3{
+        font-size: 22px;
+    }
+
+    #dashboardContent h5{
+        font-size: 17px;
+    }
+}
+
+/* ========================================
+   DASHBOARD DESKTOP FIX
+   KHUSUS WEB/Desktop
+======================================== */
+
+@media (min-width: 992px){
+
+    /* layout dashboard */
+    #dashboardContent .row:last-child{
+        align-items: flex-start;
+    }
+
+    /* card utama */
+    #dashboardContent .card{
+        border-radius: 22px;
+    }
+
+    /* unit kos terbaru */
+    .kos-table-pemilik{
+        margin-bottom: 0 !important;
+    }
+
+    .kos-table-pemilik thead th{
+        font-size: 14px;
+        font-weight: 700;
+        padding: 16px 18px;
+        border-bottom: 1px solid #ececec;
+        white-space: nowrap;
+    }
+
+    .kos-table-pemilik tbody td{
+        padding: 18px;
+        vertical-align: middle;
+        border-bottom: 1px solid #f3f4f6;
+    }
+
+    /* nama kos */
+    .kos-table-pemilik tbody td strong{
+        font-size: 15px;
+        color: #111827;
+    }
+
+    /* harga */
+    .kos-table-pemilik tbody td:last-child{
+        font-weight: 700;
+        color: #2563eb;
+        white-space: nowrap;
+    }
+
+    /* hover */
+    .kos-table-pemilik tbody tr:hover{
+        background: #fafafa;
+    }
+
+    /* badge */
+    .kos-table-pemilik .badge{
+        padding: 8px 12px;
+        border-radius: 999px;
+        font-size: 11px;
+        font-weight: 600;
+    }
+
+    /* menu cepat */
+    .menu-card-pemilik{
+        padding: 28px !important;
+        border-radius: 22px !important;
+        border: none !important;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    }
+
+    /* item menu */
+    .help-link-pemilik{
+        display: flex;
+        align-items: center;
+        gap: 14px;
+
+        padding: 14px 16px;
+
+        border-radius: 14px;
+
+        text-decoration: none;
+
+        transition: all .2s ease;
+    }
+
+    .help-link-pemilik:hover{
+        background: #f8fafc;
+        transform: translateX(4px);
+    }
+}
+
+
+/* ========================================
+   HIDE KOLOM KOTA & TIPE DI MOBILE (FORCE)
+   ======================================== */
+
+@media (max-width: 991.98px) {
+    /* Paksa sembunyikan kolom Kota & Tipe */
+    .unit-kos-table thead th:nth-child(2),
+    .unit-kos-table thead th:nth-child(3),
+    .unit-kos-table tbody td:nth-child(2),
+    .unit-kos-table tbody td:nth-child(3) {
+        display: none !important;
+        visibility: hidden !important;
+    }
+    
+    /* Atur lebar kolom Nama Kos */
+    .unit-kos-table thead th:first-child,
+    .unit-kos-table tbody td:first-child {
+        width: 60% !important;
+        max-width: 60% !important;
+        min-width: 60% !important;
+    }
+    
+    /* Atur lebar kolom Harga */
+    .unit-kos-table thead th:last-child,
+    .unit-kos-table tbody td:last-child {
+        width: 40% !important;
+        max-width: 40% !important;
+        min-width: 40% !important;
+        text-align: right !important;
+    }
+    
+    /* Harga di mobile */
+    .unit-kos-table tbody td:last-child {
+        font-size: 14px !important;
+        font-weight: 700 !important;
+        color: #0d6efd !important;
+        white-space: nowrap !important;
+    }
+    
+    /* Nama Kos di mobile */
+    .unit-kos-table tbody td:first-child strong {
+        font-size: 14px !important;
+        font-weight: 600 !important;
+        display: block !important;
+        word-break: break-word !important;
+        white-space: normal !important;
+    }
+}
+

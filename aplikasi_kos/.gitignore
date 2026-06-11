@@ -1,0 +1,13 @@
+﻿*/build/
+*/*/build/
+**/build/
+*.apk
+*.aab
+*.lock
+.dart_tool/
+.flutter-plugins*
+flutter_app/pubspec.lock
+flutter_app/android/app/build/
+flutter_app/ios/Podfile.lock
+uploads/bukti_bayar/*.png
+uploads/ktp/*.png
