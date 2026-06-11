@@ -1,0 +1,389 @@
+:root{
+    --primary:#2563eb;
+    --primary-dark:#1d4ed8;
+    --secondary:#3b82f6;
+    --light:#f8fafc;
+    --dark:#0f172a;
+    --gray:#64748b;
+    --border:#e2e8f0;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:#fff;
+    color:var(--dark);
+    overflow-x:hidden;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+    padding:18px 0;
+    transition:.3s;
+}
+
+.navbar-brand{
+    font-size:1.5rem;
+    font-weight:700;
+    color:var(--primary)!important;
+}
+
+.nav-link{
+    font-weight:500;
+    color:var(--dark)!important;
+    margin:0 10px;
+}
+
+.nav-link:hover{
+    color:var(--primary)!important;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn-primary{
+    background:var(--primary);
+    border:none;
+    border-radius:14px;
+    padding:12px 24px;
+}
+
+.btn-primary:hover{
+    background:var(--primary-dark);
+}
+
+.btn-outline-primary{
+    border-radius:14px;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero-section{
+    padding-top:120px;
+    min-height:100vh;
+    background:
+    linear-gradient(
+        180deg,
+        #eff6ff 0%,
+        #ffffff 100%
+    );
+}
+
+.hero-title{
+    font-size:3.5rem;
+    font-weight:800;
+    line-height:1.2;
+}
+
+.hero-text{
+    font-size:1.15rem;
+    color:var(--gray);
+    margin-top:20px;
+}
+
+.hero-image{
+    max-height:700px;
+    filter:
+    drop-shadow(
+        0 25px 50px rgba(37,99,235,.25)
+    );
+}
+
+/* =========================
+   SECTION
+========================= */
+
+.section{
+    padding:100px 0;
+}
+
+.section-title{
+    text-align:center;
+    font-weight:700;
+    margin-bottom:60px;
+    font-size:2.5rem;
+}
+
+/* =========================
+   STATS
+========================= */
+
+.stats-section{
+    padding:80px 0;
+}
+
+.stat-card{
+    background:#fff;
+    border-radius:24px;
+    padding:35px;
+    text-align:center;
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.05);
+    transition:.3s;
+}
+
+.stat-card:hover{
+    transform:translateY(-6px);
+}
+
+.stat-card h2{
+    color:var(--primary);
+    font-weight:800;
+}
+
+.stat-card p{
+    margin:0;
+    color:var(--gray);
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+#tentang img{
+    border-radius:24px;
+}
+
+#tentang p{
+    color:var(--gray);
+    line-height:1.8;
+}
+
+/* =========================
+   FEATURE
+========================= */
+
+.feature-card{
+    background:#fff;
+    border-radius:24px;
+    padding:40px 30px;
+    text-align:center;
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.05);
+    transition:.3s;
+    height:100%;
+}
+
+.feature-card:hover{
+    transform:translateY(-8px);
+}
+
+.feature-card i{
+    font-size:3rem;
+    color:var(--primary);
+}
+
+.feature-card h5{
+    margin-top:20px;
+    font-weight:700;
+}
+
+/* =========================
+   SCREENSHOT
+========================= */
+
+.mySwiper{
+    padding-bottom:50px;
+}
+
+.app-screen{
+    width:100%;
+    max-width:280px;
+    display:block;
+    margin:auto;
+    border-radius:30px;
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.15);
+}
+
+.swiper-slide{
+    text-align:center;
+}
+
+.swiper-pagination-bullet-active{
+    background:var(--primary);
+}
+
+/* =========================
+   OWNER SECTION
+========================= */
+
+.owner-section{
+    padding:120px 0;
+    background:
+    linear-gradient(
+        135deg,
+        #2563eb,
+        #3b82f6
+    );
+    color:#fff;
+}
+
+.owner-section h2{
+    font-size:3rem;
+    font-weight:800;
+}
+
+.owner-section p{
+    font-size:1.2rem;
+    margin:20px 0;
+}
+
+/* =========================
+   FAQ
+========================= */
+
+.accordion-item{
+    border:none;
+    margin-bottom:15px;
+    border-radius:16px!important;
+    overflow:hidden;
+    box-shadow:
+    0 5px 15px rgba(0,0,0,.05);
+}
+
+.accordion-button{
+    font-weight:600;
+}
+
+.accordion-button:not(.collapsed){
+    background:#eff6ff;
+    color:var(--primary);
+}
+
+/* =========================
+   DOWNLOAD
+========================= */
+
+.download-section{
+    padding:120px 0;
+    background:
+    linear-gradient(
+        135deg,
+        #1d4ed8,
+        #2563eb
+    );
+    color:#fff;
+}
+
+.download-section h2{
+    font-size:3rem;
+    font-weight:800;
+}
+
+.download-section p{
+    margin:20px 0;
+    font-size:1.1rem;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:var(--dark);
+    color:#fff;
+    text-align:center;
+    padding:30px 0;
+}
+
+/* =========================
+   FLOATING WA
+========================= */
+
+.whatsapp-float{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:#25D366;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#fff;
+    font-size:28px;
+    z-index:999;
+    text-decoration:none;
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.2);
+}
+
+.whatsapp-float:hover{
+    color:#fff;
+    transform:scale(1.05);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:991px){
+
+    .hero-title{
+        font-size:2.5rem;
+    }
+
+    .hero-section{
+        text-align:center;
+    }
+
+    .hero-image{
+        margin-top:50px;
+        max-height:500px;
+    }
+
+    .section-title{
+        font-size:2rem;
+    }
+
+    .owner-section h2,
+    .download-section h2{
+        font-size:2rem;
+    }
+}
+
+@media(max-width:576px){
+
+    .hero-title{
+        font-size:2rem;
+    }
+
+    .hero-text{
+        font-size:1rem;
+    }
+
+    .section{
+        padding:70px 0;
+    }
+
+    .stat-card{
+        padding:25px;
+    }
+}
+.hero-bg-shape{
+    position:fixed;
+    width:700px;
+    height:700px;
+    background:
+    radial-gradient(
+        circle,
+        rgba(37,99,235,.15),
+        transparent 70%
+    );
+
+    top:-250px;
+    right:-250px;
+
+    z-index:-1;
+}
