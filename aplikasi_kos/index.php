@@ -117,9 +117,7 @@
                         <a href="download/mykos-v1.0.apk" download="MyKos-v1.0.apk" class="btn btn-primary btn-lg px-4 rounded-pill shadow-sm" aria-label="Download Aplikasi APK">
                             <i class="bi bi-download me-2"></i> Download APK
                         </a>
-                        <a href="web_dashboard/login.php" class="btn btn-outline-primary btn-lg px-4 rounded-pill" aria-label="Masuk sebagai Pemilik Kos">
-                            Masuk Sistem <i class="bi bi-arrow-right ms-2"></i>
-                        </a>
+                        
                     </div>
                 </div>
                 <div class="col-lg-6 text-center" data-aos="fade-left" data-aos-delay="200">
