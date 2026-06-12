@@ -78,17 +78,12 @@ const navLinks = document.querySelectorAll('.nav-link');
 const navbarCollapse = document.querySelector('.navbar-collapse');
 
 navLinks.forEach(link => {
-
     link.addEventListener('click', () => {
-
         if (navbarCollapse.classList.contains('show')) {
-
-            new bootstrap.Collapse(navbarCollapse).hide();
-
+            const collapseInstance = bootstrap.Collapse.getInstance(navbarCollapse) || new bootstrap.Collapse(navbarCollapse, {toggle: false});
+            collapseInstance.hide();
         }
-
     });
-
 });
 
 
@@ -107,7 +102,7 @@ window.addEventListener("scroll", () => {
         const sectionTop = section.offsetTop - 120;
         const sectionHeight = section.clientHeight;
 
-        if (pageYOffset >= sectionTop) {
+        if (window.scrollY >= sectionTop) {
 
             current = section.getAttribute("id");
 

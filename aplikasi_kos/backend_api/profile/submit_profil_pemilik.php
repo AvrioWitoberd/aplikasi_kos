@@ -18,9 +18,9 @@ $id_user = $_SESSION['user_id'];
 
 // Definisikan Folder Penyimpanan (Path dari file API ini)
 // File API di: backend_api/profile/submit_profil_pemilik.php
-$dir_kos   = __DIR__ . "/uploads/profil_kos/";      // mykos_project/uploads/profil_kos/
-$dir_ktp   = __DIR__ . "/uploads/ktp/";      // mykos_project/uploads/ktp/
-$dir_bukti = __DIR__ . "/uploads/bukti_bayar/"; // mykos_project/uploads/bukti_bayar/
+$dir_kos   = dirname(__DIR__, 2) . "/uploads/profil_kos/";      // mykos_project/uploads/profil_kos/
+$dir_ktp   = dirname(__DIR__, 2) . "/uploads/ktp/";      // mykos_project/uploads/ktp/
+$dir_bukti = dirname(__DIR__, 2) . "/uploads/bukti_bayar/"; // mykos_project/uploads/bukti_bayar/
 
 // Buat folder jika belum ada
 if (!is_dir($dir_kos))   mkdir($dir_kos, 0777, true);

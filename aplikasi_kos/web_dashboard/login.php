@@ -11,8 +11,14 @@
 </head>
 <body>
 
+<div style="position: absolute; top: 30px; left: 40px; z-index: 10;">
+    <a href="../index.php" style="display: flex; align-items: center; gap: 8px; color: #475569; text-decoration: none; font-size: 0.95rem; font-weight: 500; transition: color 0.3s ease;">
+        ← Menuju Website Utama
+    </a>
+</div>
+
 <div class="login-card">
-    <div class="logo-container">
+    <div class="logo-container" style="position: relative;">
         <i class="fas fa-home"></i>
         <h2>MyKos</h2>
         <p>Panel Admin & Pemilik Kos</p>
