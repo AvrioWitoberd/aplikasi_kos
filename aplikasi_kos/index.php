@@ -86,8 +86,8 @@
                     </li>
                 </ul>
                 <div class="d-flex gap-2 justify-content-center mt-3 mt-lg-0">
-                    <a href="#download" class="btn btn-primary px-4 rounded-pill" aria-label="Download Aplikasi MyKos">
-                        Download App
+                    <a href="download/mykos-v1.0.apk" download="MyKos-v1.0.apk" class="btn btn-primary px-4 rounded-pill" aria-label="Download Aplikasi MyKos">
+                        <i class="bi bi-download me-1"></i> Download App
                     </a>
                     <a href="web_dashboard/login.php" class="btn btn-outline-primary px-4 rounded-pill" aria-label="Masuk ke Sistem Dashboard MyKos">
                         Masuk Sistem
@@ -114,8 +114,8 @@
                         Cari kos berdasarkan lokasi, harga, fasilitas, dan ulasan pengguna tepercaya langsung dari smartphone Anda. Bebas ribet, aman, dan nyaman.
                     </p>
                     <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3 mt-4">
-                        <a href="#download" class="btn btn-primary btn-lg px-4 rounded-pill shadow-sm" aria-label="Download Aplikasi APK">
-                            <i class="bi bi-android2 me-2"></i> Download APK
+                        <a href="download/mykos-v1.0.apk" download="MyKos-v1.0.apk" class="btn btn-primary btn-lg px-4 rounded-pill shadow-sm" aria-label="Download Aplikasi APK">
+                            <i class="bi bi-download me-2"></i> Download APK
                         </a>
                         <a href="web_dashboard/login.php" class="btn btn-outline-primary btn-lg px-4 rounded-pill" aria-label="Masuk sebagai Pemilik Kos">
                             Masuk Sistem <i class="bi bi-arrow-right ms-2"></i>
@@ -359,8 +359,8 @@
                 <p class="lead text-secondary mb-5 mx-auto" style="max-width: 600px;">
                     Jadikan MyKos sebagai teman pencarian hunian terpercaya. Unduh aplikasinya sekarang dan rasakan kemudahannya.
                 </p>
-                <a href="#" class="btn btn-primary btn-lg px-5 py-3 rounded-pill fw-bold shadow position-relative z-1 mb-3" aria-label="Download Aplikasi APK">
-                    <i class="bi bi-google-play me-2"></i> Aplikasi Segera Hadir
+                <a href="download/mykos-v1.0.apk" download="MyKos-v1.0.apk" class="btn btn-primary btn-lg px-5 py-3 rounded-pill fw-bold shadow position-relative z-1 mb-3" aria-label="Download Aplikasi APK">
+                    <i class="bi bi-download me-2"></i> Download APK
                 </a>
             </div>
         </div>
